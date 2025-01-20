@@ -7,15 +7,15 @@ const word = 'javascript';
 function contaVocali(stringa) {
     const vocali = ["a", "e", "i", "o", "u"]; 
     let vocaliTrovate = 0;
-    for (let i = 0; i < stringa.length; i++){
-        for (let k = 0; k < vocali.length; i++) {
+    for (let i = 0; i < stringa.length ; i++){
+        for (let k = 0; k < vocali.length; k++) {
             if(stringa[i] === vocali[k]){
-               vocaliTrovate++     
+               vocaliTrovate++;    
             }
         }
-       return vocaliTrovate; 
-    }
     
+    }
+    return vocaliTrovate;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
