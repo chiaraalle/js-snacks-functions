@@ -9,10 +9,26 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+function creaSaluto(nome) {
+    let mattina = `buongiorno ${nome}`; 
+    let pomeriggio = `buon pomeriggio ${nome}`; 
+    let sera = `buonasera ${nome}`; 
+    const orario = new Date();
+    let ore = orario.getHours();
+    //console.log(ore);
+    if(ore <= 13){
+        return mattina
+    } else if (ore <= 17){
+        return pomeriggio
+    } else {
+       return sera
+    }
+    
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+//creaSaluto();
+console.log(creaSaluto(name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
